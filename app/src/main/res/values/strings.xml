@@ -9,6 +9,5 @@
     <string name="title_fragment2">Fragmento 2</string>
     <string name="title_fragment3">Fragmento 3</string>
     <string name="button_fragment1">Navega</string>
-    <string name="button_fragment2">Navega</string>
-    <string name="button_fragment3">Volver</string>
+    <string name="button_fragment2">Avanzar</string>
 </resources>
