@@ -27,6 +27,7 @@ class Fragment2 : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         el_parametro = Fragment2Args.fromBundle(requireArguments()).unCliente
 
         // Inflate the layout for this fragment

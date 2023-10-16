@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment3"
-        android:name="com.proyecto.personal.mb.Fragment3"
+        android:name="com.proyecto.personal.mb.fragments.Fragment3"
         android:label="fragment_3"
         tools:layout="@layout/fragment_3" >
         <argument

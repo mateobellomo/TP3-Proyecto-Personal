@@ -6,14 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import com.proyecto.personal.mb.Fragment3Args
 import com.proyecto.personal.mb.R
 import com.proyecto.personal.mb.models.Cliente
 
 class Fragment3 : Fragment() {
 
     lateinit var vista: View
-    lateinit var el_parametro2: Cliente
+    lateinit var el_parametro: Cliente
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -25,22 +25,20 @@ class Fragment3 : Fragment() {
         // Inflate the layout for this fragment
         vista = inflater.inflate(R.layout.fragment_3, container, false)
 
-        el_parametro2 = Fragment3Args.fromBundle(requireArguments()).elMismoCliente
+        el_parametro = Fragment3Args.fromBundle(requireArguments()).elMismoCliente
 
         return vista
     }
 
-
     override fun onStart() {
         super.onStart()
 
-        val tvEmail = vista.findViewById<TextView>(R.id.tvFragment2Email)
+        val tvEmail = vista.findViewById<TextView>(R.id.tvFragment3Email)
 
-        val tvPassword = vista.findViewById<TextView>(R.id.tvFragment2Password)
+        val tvPassword = vista.findViewById<TextView>(R.id.tvFragment3Password)
 
-        tvEmail.text = el_parametro2.email
-        tvPassword.text = el_parametro2.password
+        tvEmail.text = el_parametro.email
+        tvPassword.text = el_parametro.password
     }
-
 
 }
