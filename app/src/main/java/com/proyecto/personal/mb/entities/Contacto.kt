@@ -3,16 +3,19 @@ package com.proyecto.personal.mb.entities
 import android.os.Parcel
 import android.os.Parcelable
 
-class Contacto(nombre: String?, edad: Int?, curso: String?): Parcelable {
+class Contacto(nombre: String?, edad: Int?, curso: String?, urlImage: String?): Parcelable {
     var nombre: String = "Sin completar"
 
     var curso: String = "Sin completar"
 
     var edad: Int = 0
 
+    var urlImage: String = ""
+
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readInt(),
+        parcel.readString(),
         parcel.readString()
     )
 
@@ -29,12 +32,14 @@ class Contacto(nombre: String?, edad: Int?, curso: String?): Parcelable {
         this.nombre = nombre!!
         this.curso = curso!!
         this.edad = edad!!
+        this.urlImage = urlImage!!
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(nombre)
         parcel.writeString(curso)
         parcel.writeInt(edad)
+        parcel.writeString(urlImage)
     }
 
     override fun describeContents(): Int {

@@ -30,6 +30,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_contactos"
         android:layout_width="356dp"
         android:layout_height="489dp"
         app:layout_constraintBottom_toBottomOf="parent"
