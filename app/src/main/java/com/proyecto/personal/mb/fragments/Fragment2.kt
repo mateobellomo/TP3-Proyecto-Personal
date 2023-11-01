@@ -43,6 +43,16 @@ class Fragment2 : Fragment() {
         }
 
 
+        val boton2 = vista.findViewById<Button>(R.id.btnFragment2Nav2)
+
+        boton2.setOnClickListener {
+            val action = Fragment2Directions.actionFragment2ToFragment4()
+
+            vista.findNavController().navigate(action)
+
+        }
+
+
         return vista
     }
 

@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_fragment2_to_fragment3"
             app:destination="@id/fragment3" />
+        <action
+            android:id="@+id/action_fragment2_to_fragment4"
+            app:destination="@id/fragment4" />
     </fragment>
     <fragment
         android:id="@+id/fragment3"
@@ -47,4 +50,9 @@
             android:name="contacto"
             app:argType="com.proyecto.personal.mb.entities.Contacto" />
     </fragment>
+    <fragment
+        android:id="@+id/fragment4"
+        android:name="com.proyecto.personal.mb.fragments.Fragment4"
+        android:label="fragment_4"
+        tools:layout="@layout/fragment_4" />
 </navigation>
